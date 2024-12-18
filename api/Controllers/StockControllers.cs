@@ -39,26 +39,23 @@ namespace api.Controllers
         }
 
         [HttpPost]
-public IActionResult Create([FromBody] CreateStockRequestDto stockDto)
-{
-    var stockModel = stockDto.ToStockFromCreateDto();
-    _context.Stocks.Add(stockModel);
-    _context.SaveChanges();
-
-    // Здесь создаем объект DTO без Id для ответа
-    var responseDto = new StockDto
-    {
-        Symbol = stockModel.Symbol,
-        CompanyName = stockModel.CompanyName,
-        Purchase = stockModel.Purchase,
-        LastDiv = stockModel.LastDiv,
-        Industry = stockModel.Industry,
-        MarketCap = stockModel.MarketCap
-    };
-
-    // Возвращаем новый ответ без Id
-    return CreatedAtAction(nameof(GetById), new { id = stockModel.Id }, responseDto);
-}
-
+        public IActionResult Create([FromBody] CreateStockRequestDto stockDto)
+        {
+        var stockModel = stockDto.ToStockFromCreateDto();
+        _context.Stocks.Add(stockModel);
+        _context.SaveChanges();
+    
+        var responseDto = new StockDto
+        {
+            Symbol = stockModel.Symbol,
+            CompanyName = stockModel.CompanyName,
+            Purchase = stockModel.Purchase,
+            LastDiv = stockModel.LastDiv,
+            Industry = stockModel.Industry,
+            MarketCap = stockModel.MarketCap
+        };
+        
+        return CreatedAtAction(nameof(GetById), new { id = stockModel.Id }, responseDto);
+        }
     }
 }
