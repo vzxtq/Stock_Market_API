@@ -1,4 +1,3 @@
-# Stock 0Market API
 # 📈 Stock Market API
 
 A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**, designed to deliver financial data like stock prices, historical charts, and basic analytics. The project also includes JWT-based authentication, caching with Redis, and background task handling. Currently under active development — adding **real-time data updates** and a **React-based frontend**.
