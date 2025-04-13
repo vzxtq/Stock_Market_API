@@ -6,9 +6,7 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 ## 🚀 Features
 
-- 🔐 **JWT Authentication** – Secure access for authorized users
 - 📊 **Stock Data API** – Provides stock prices, historical data, and analytics
-- ⚡ **Redis Caching** – For fast response times and optimized performance
 - ⚙️ **Background Tasks** – Handles data parsing and updates asynchronously
 - 🔄 **Real-Time Updates** *(in progress)* – Auto-fetching fresh data from external sources
 - 🖥️ **React Frontend** *(in development)* – Clean and interactive UI for data visualization
@@ -34,8 +32,6 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 - .NET SDK
 - SQL Server
-- Redis
-- Node.js (for the frontend)
 
 ### Backend Setup
 
@@ -48,17 +44,7 @@ dotnet restore
 
 # Run the API
 dotnet run
-```
-
-## Roadmap
-[x] Build core API structure  
-[x] JWT-based authentication  
-[x] Redis caching layer  
-[x] Celery background task setup  
-[ ] Real-time stock data integration  
-[ ] Full React frontend with stock charts  
-[ ] Filter/sort/search functionality  
-[ ] Docker support  
+``` 
 
 ## 📄 License
 
