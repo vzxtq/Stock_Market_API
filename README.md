@@ -4,16 +4,17 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📊 **Stock Data API** – Provides stock prices, historical data, and analytics
-- ⚙️ **Background Tasks** – Handles data parsing and updates asynchronously
-- 🔄 **Real-Time Updates** *(in progress)* – Auto-fetching fresh data from external sources
-- 🖥️ **React Frontend** *(in development)* – Clean and interactive UI for data visualization
+-  **Stock Data API** – Provides stock prices, historical data, and analytics
+-  **JWT Authentication** – Secure registration and login system using JSON Web Tokens
+-  **Background Tasks** – Handles data parsing and updates asynchronously
+-  **Real-Time Updates** *(in progress)* – Auto-fetching fresh data from external sources
+-  **React Frontend** *(in development)* – Clean and interactive UI for data visualization
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - **Backend:** C# (.NET)
 - **Database:** SQL Server
@@ -24,7 +25,7 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 ---
 
-## 📦 Setup Instructions
+##  Setup Instructions
 
 > Note: This project is still in active development. Instructions will be updated accordingly.
 
@@ -46,6 +47,6 @@ dotnet restore
 dotnet run
 ``` 
 
-## 📄 License
+##  License
 
 MIT License
