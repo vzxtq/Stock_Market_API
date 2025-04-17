@@ -16,23 +16,17 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 ##  Tech Stack
 
-- **Backend:** C# (.NET)
+- **Backend:** C# (ASP.NET Core)
 - **Database:** SQL Server
 - **Authentication:** JWT (JSON Web Tokens)
 - **Caching:** Redis
 - **Async Tasks:** Celery + message queue
-- **Frontend (WIP):** React.js
 
 ---
 
 ##  Setup Instructions
 
 > Note: This project is still in active development. Instructions will be updated accordingly.
-
-### Prerequisites
-
-- .NET SDK
-- SQL Server
 
 ### Backend Setup
 
