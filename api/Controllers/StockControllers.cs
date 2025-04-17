@@ -43,6 +43,7 @@ namespace api.Controllers
         }
 
         [HttpPost]
+<<<<<<< HEAD
         public async Task<IActionResult> Create([FromBody] CreateStockRequestDto stockDto)
         {
             var stockModel = stockDto.ToStockFromCreateDto();
@@ -77,6 +78,25 @@ namespace api.Controllers
             }
 
             return NoContent();
+=======
+        public IActionResult Create([FromBody] CreateStockRequestDto stockDto)
+        {
+        var stockModel = stockDto.ToStockFromCreateDto();
+        _context.Stocks.Add(stockModel);
+        _context.SaveChanges();
+    
+        var responseDto = new StockDto
+        {
+            Symbol = stockModel.Symbol,
+            CompanyName = stockModel.CompanyName,
+            Purchase = stockModel.Purchase,
+            LastDiv = stockModel.LastDiv,
+            Industry = stockModel.Industry,
+            MarketCap = stockModel.MarketCap
+        };
+        
+        return CreatedAtAction(nameof(GetById), new { id = stockModel.Id }, responseDto);
+>>>>>>> a7bbc82e2076a1f9d43c0dbea1cb1c6732769441
         }
     }
 }
