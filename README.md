@@ -4,38 +4,29 @@ A high-performance Stock Market API built with **C# (.NET)** and **SQL Server**,
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 **JWT Authentication** – Secure access for authorized users
-- 📊 **Stock Data API** – Provides stock prices, historical data, and analytics
-- ⚡ **Redis Caching** – For fast response times and optimized performance
-- ⚙️ **Background Tasks** – Handles data parsing and updates asynchronously
-- 🔄 **Real-Time Updates** *(in progress)* – Auto-fetching fresh data from external sources
-- 🖥️ **React Frontend** *(in development)* – Clean and interactive UI for data visualization
+-  **Stock Data API** – Provides stock prices, historical data, and analytics
+-  **JWT Authentication** – Secure registration and login system using JSON Web Tokens
+-  **Background Tasks** – Handles data parsing and updates asynchronously
+-  **Real-Time Updates** *(in progress)* – Auto-fetching fresh data from external sources
+-  **React Frontend** *(in development)* – Clean and interactive UI for data visualization
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
-- **Backend:** C# (.NET)
+- **Backend:** C# (ASP.NET Core)
 - **Database:** SQL Server
 - **Authentication:** JWT (JSON Web Tokens)
 - **Caching:** Redis
 - **Async Tasks:** Celery + message queue
-- **Frontend (WIP):** React.js
 
 ---
 
-## 📦 Setup Instructions
+##  Setup Instructions
 
 > Note: This project is still in active development. Instructions will be updated accordingly.
-
-### Prerequisites
-
-- .NET SDK
-- SQL Server
-- Redis
-- Node.js (for the frontend)
 
 ### Backend Setup
 
@@ -48,18 +39,8 @@ dotnet restore
 
 # Run the API
 dotnet run
-```
+``` 
 
-## Roadmap
-[x] Build core API structure  
-[x] JWT-based authentication  
-[x] Redis caching layer  
-[x] Celery background task setup  
-[ ] Real-time stock data integration  
-[ ] Full React frontend with stock charts  
-[ ] Filter/sort/search functionality  
-[ ] Docker support  
-
-## 📄 License
+##  License
 
 MIT License
